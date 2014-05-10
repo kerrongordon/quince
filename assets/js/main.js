@@ -3,7 +3,7 @@ $(document).ready(function() {
           $('nav.moblemenu').toggleClass('showmenu');
      });
     
-    $('ul#navlist li a').click(function() {
+    $('ul#navlist li').click(function() {
         $('nav.moblemenu').removeClassClass('showmenu');
     });
     

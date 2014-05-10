@@ -13,8 +13,12 @@ $(document).ready(function() {
     
     //load menu pages
     $('ul#navlist li a').click(function() {
-        var pages = $(this).attr('href');
-        $('#loadPage').load('pages/' + pages + '.html');
+        var pages = $(this).attr('href');        
+        $('#loadPage').fadeOut('slow', function(){
+            $('#loadPage').load('pages/' + pages + '.html', function(){
+                $('#loadPage').fadeIn('slow');
+            });
+        });
         return false;
     });
 }); 

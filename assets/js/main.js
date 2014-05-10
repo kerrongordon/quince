@@ -10,6 +10,7 @@ $(document).ready(function() {
     $('ul#navlist li a').click(function() {
         var pages = $(this).attr('href');
         $('#loadPage').load('pages/' + pages + '.html');
+        $('nav.moblemenu').removeClassClass('showmenu');
         return false;
     });
 }); 

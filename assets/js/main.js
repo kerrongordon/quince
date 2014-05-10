@@ -19,6 +19,7 @@ $(document).ready(function() {
                 $('#loadPage').fadeIn('slow');
             });
         });
+        document.title = pages + 'Gordon-tek';
         return false;
     });
 }); 

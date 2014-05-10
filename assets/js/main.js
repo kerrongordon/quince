@@ -3,8 +3,9 @@ $(document).ready(function() {
           $('nav.moblemenu').toggleClass('showmenu');
      });
     
-    $('ul#navlist li').click(function() {
+    $('ul#navlist li a').click(function() {
         $('nav.moblemenu').toggleClass('showmenu');
+        return false;
     });
     
     //init 

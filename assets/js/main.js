@@ -4,7 +4,7 @@ $(document).ready(function() {
      });
     
     $('ul#navlist li').click(function() {
-        $('nav.moblemenu').removeClassClass('showmenu');
+        $('nav.moblemenu').toggleClass('showmenu');
     });
     
     //init 

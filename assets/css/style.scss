@@ -177,9 +177,7 @@ section {
     }
 }
 
-#loadPage {
-    @include transition(.55s);
-}
+
 
 #footer .tags a:hover {
     background: $fbcolor;

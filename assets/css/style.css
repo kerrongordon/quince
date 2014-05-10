@@ -138,13 +138,6 @@ section {
     -o-transition: all 0.55s ease;
     transition: all 0.55s ease; }
 
-#loadPage {
-  -webkit-transition: all 0.55s ease;
-  -moz-transition: all 0.55s ease;
-  -ms-transition: all 0.55s ease;
-  -o-transition: all 0.55s ease;
-  transition: all 0.55s ease; }
-
 #footer .tags a:hover {
   background: #a0d468;
   color: #fff; }

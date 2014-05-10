@@ -3,6 +3,10 @@ $(document).ready(function() {
           $('nav.moblemenu').toggleClass('showmenu');
      });
     
+    $('ul#navlist li a').click(function() {
+        $('nav.moblemenu').removeClassClass('showmenu');
+    });
+    
     //init 
     $('#loadPage').load('pages/index.html');
     
@@ -10,7 +14,6 @@ $(document).ready(function() {
     $('ul#navlist li a').click(function() {
         var pages = $(this).attr('href');
         $('#loadPage').load('pages/' + pages + '.html');
-        $('nav.moblemenu').removeClassClass('showmenu');
         return false;
     });
 }); 

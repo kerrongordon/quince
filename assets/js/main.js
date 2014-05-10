@@ -1,6 +1,6 @@
 $(document).ready(function() {
       $('.menubutton').on('click', function() {
-          $('nav').toggleClass('showmenu');
+          $('.moblemenu').toggleClass('showmenu');
      });
     
     //init 

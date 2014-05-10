@@ -6,7 +6,7 @@ $(document).ready(function() {
     //init 
     $('#loadPage').load('pages/index.html');
     
-    //load menu page
+    //load menu pages
     $('ul#navlist li a').click(function() {
         var pages = $(this).attr('href');
         $('#loadPage').load('pages/' + pages + '.html');

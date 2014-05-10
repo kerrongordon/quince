@@ -1,0 +1,637 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+ 
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline; }
+ 
+/* HTML5 display-role reset for older browsers */
+ 
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+display: block; }
+ 
+body {
+line-height: 1; }
+ 
+ol, ul {
+list-style: none; }
+ 
+blockquote, q {
+quotes: none; }
+ 
+blockquote {
+&:before, &:after {
+content: '';
+content: none; } }
+ 
+q {
+&:before, &:after {
+content: '';
+content: none; } }
+ 
+table {
+border-collapse: collapse;
+border-spacing: 0; }
+
+
+/* end of reset */
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic);
+
+$bcolor: #fff;
+$fbcolor: #a0d468;
+$fontsize: 14px;
+$fontcolor: #777;
+
+@mixin transition($time)  {
+    -webkit-transition: all $time ease;
+	-moz-transition: all $time ease;
+	-ms-transition: all $time ease;
+	-o-transition: all $time ease;
+	transition: all $time ease;
+}
+
+body {
+    background-color: $bcolor;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: $fontsize;
+    line-height: 1.5em;
+    color: $fontcolor;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+#menu {
+    background-color: $bcolor;
+    padding: 35px;
+    h1 {
+        font-size: 3.5em;
+        padding: 15px 0;
+        float: left;
+    }
+    
+    nav {
+        float: right;
+        vertical-align: middle;
+        margin: 18px 0;
+        ul {
+            li {
+                display: inline-block;
+                a {
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}
+
+.clearfix {
+    clear: both;
+}
+
+#featured, #buynow {
+    background-color: $fbcolor;
+    h2 {
+        color: $bcolor;
+        font-size: 2.0em;
+        float: left;
+        font-weight: 300;
+    }
+}
+
+#buynow {
+    h2 {
+        padding: 20px 10px;
+    }
+    .input {
+        background: #90c557;
+        border: none;
+        padding: 20px 10px;
+        color: #fff;
+        font-weight: 400;
+        float: left;
+        text-align: center;
+        font-size: 1.5em;
+        @include transition(.55s);
+    }
+}
+#buynow .input:hover {
+    background: #555c66;
+}
+
+
+#slider {
+    padding: 0;
+    background: url(../img/slide.jpg) 50% 50% no-repeat;
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+}
+
+#main {
+    background-color: #f9f9f9;
+    padding: 70px 0;
+}
+
+#footer {
+    background: #555c66;
+    padding: 70px 0;
+    h4 {
+        color: #fff;
+        font-size: 1.5em;
+        padding: 10px 0;
+        font-weight: 300;
+    }
+    p {
+        color: #cfd1d3;
+        font-size: 1.15em;
+        line-height: 1.5em;
+        padding: 10px 0;
+    }
+    aside {
+        float: left;
+        padding: 20px 10px;
+    }
+    .tags {
+        a {
+            background: #40434c;
+            padding: 8px 15px;
+            display: inline-block;
+            margin: 5px 1px;
+            @include transition(.55s);
+        }
+    }
+}
+
+#footer .tags a:hover {
+    background: $fbcolor;
+    color: #fff;
+}
+#copyright {
+    background: #40434c;
+    p {
+        color: #999;
+        padding: 0 10px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.lead {
+    padding: 20px 0;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    color: #666;
+}
+
+
+.maininfor {
+    float: left;
+    padding: 35px 10px;
+    h3 {
+        font-size: 1.7em;
+        padding: 20px 0;
+        font-weight: 300;
+        color: #444;
+    }
+}
+.userinfor {
+    float: left;
+    padding: 35px 10px;
+    img {
+        width: 100px;
+        height: 100px;
+        float: left;
+        border-radius: 100%;
+    }
+    author {
+        padding: 20px;
+    }
+    .lead {
+        font-size: 1.1em;
+        padding: 10px 0 0 120px;
+        text-align: left;
+    }
+}
+.maintags {
+    float: left;
+    padding: 35px 10px;
+    .input {
+        background: #4fc0e9;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 20px;
+        color: #fff;
+        margin: 50px 0 0 0;
+        display: block;
+        text-align: center;
+    }
+    .tags-title {
+        font-weight: bold;
+    }
+}
+.sidebar {
+    float: right;
+    padding: 35px 10px;
+    date {
+        background: #cad4dd;
+        padding: 20px;
+        border-radius: 5px;
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+author {
+    font-size: 1.0em;
+    font-weight: bold;
+    color: #666;
+}
+
+
+.hide-desktop {
+    display: none;
+}
+
+.row-5 {
+    width: 30px
+}
+.row-10 {
+    width: 80px
+}
+.row-15 {
+    width: 130px
+}
+.row-20 {
+    width: 180px
+}
+.row-25 {
+    width: 230px
+}
+.row-30 {
+    width: 280px
+}
+.row-35 {
+    width: 330px
+}
+.row-40 {
+    width: 380px
+}
+.row-45 {
+    width: 430px
+}
+.row-50 {
+    width: 480px
+}
+.row-55 {
+    width: 530px
+}
+.row-60 {
+    width: 580px
+}
+.row-65 {
+    width: 630px
+}
+.row-70 {
+    width: 680px
+}
+.row-75 {
+    width: 730px
+}
+.row-80 {
+    width: 780px
+}
+.row-85 {
+    width: 830px
+}
+.row-90 {
+    width: 880px
+}
+.row-95 {
+    width: 930px
+}
+
+
+
+
+
+
+@media only screen and (max-width : 1300px) {
+
+    .container {
+        width: 800px;
+    }
+    
+    .row-5 {
+    width: 30px
+    }
+    .row-10 {
+        width: 80px
+    }
+    .row-15 {
+        width: 130px
+    }
+    .row-20 {
+        width: 180px
+    }
+    .row-25 {
+        width: 230px
+    }
+    .row-30 {
+        width: 380px
+    }
+    .row-35 {
+        width: 330px
+    }
+    .row-40 {
+        width: 380px
+    }
+    .row-45 {
+        width: 430px
+    }
+    .row-50 {
+        width: 480px
+    }
+    .row-55 {
+        width: 530px
+    }
+    .row-60 {
+        width: 580px
+    }
+    .row-65 {
+        width: 630px
+    }
+    .row-70 {
+        width: 680px
+    }
+    .row-75 {
+        width: 730px
+    }
+    .row-80 {
+        width: 380px
+    }
+    .row-85 {
+        width: 830px
+    }
+    .row-90 {
+        width: 580px
+    }
+    .row-95 {
+        width: 930px
+    }
+    
+    .maininfor {
+        float: none;
+    }
+    #featured h2, #buynow h2 {
+        font-size: 1.7em;
+    }
+}
+
+@media only screen and (max-width : 855px) {
+     .container {
+        width: 400px;
+    }
+    
+    .row-5 {
+    width: 30px
+    }
+    .row-10 {
+        width: 80px
+    }
+    .row-15 {
+        width: 130px
+    }
+    .row-20 {
+        width: 180px
+    }
+    .row-25 {
+        width: 230px
+    }
+    .row-30 {
+        width: 380px
+    }
+    .row-35 {
+        width: 330px
+    }
+    .row-40 {
+        width: 380px
+    }
+    .row-45 {
+        width: 430px
+    }
+    .row-50 {
+        width: 480px
+    }
+    .row-55 {
+        width: 530px
+    }
+    .row-60 {
+        width: 580px
+    }
+    .row-65 {
+        width: 630px
+    }
+    .row-70 {
+        width: 680px
+    }
+    .row-75 {
+        width: 730px
+    }
+    .row-80 {
+        width: 380px
+    }
+    .row-85 {
+        width: 830px
+    }
+    .row-90 {
+        width: 380px
+    }
+    .row-95 {
+        width: 930px
+    }
+    
+    .hide-moble {
+        display: none;
+    }
+    
+    #buynow a {
+        text-align: center;
+    }
+    #featured h2, #buynow h2 {
+        font-size: 1.2em;
+    }
+
+    #menu nav ul li {
+        box-sizing: border-box;
+        display: block;
+        color: #fff;
+    }
+    #menu nav ul li:hover {
+        background: #2b2b2b;
+    }
+    #menu nav ul li a {
+        padding: 15px;
+        display: block;
+    }
+    #menu h1 {
+        float: none;
+        text-align: center;
+        margin: 0 0 35px 0;
+    }
+    #menu nav {
+        float: none;
+        text-align: center;
+        background: #90c557;
+        margin: 35px 0 0 0;
+        overflow: hidden;
+        @include transition(.55s);
+    }
+    .moblemenu {
+        max-height: 0;
+    }
+    .showmenu {
+        max-height: 25em;
+    }
+    .menubutton {
+        display: block;
+    }
+    
+    #menu {
+        padding: 30px 0 0 0;
+    }
+    #menu .container {
+        width: 100%;
+    }
+    .menubutton {
+        float: right;
+        font-size: 2.5em;
+        cursor: pointer;
+    }
+    
+}
+
+@media only screen and (max-width : 470px) {
+     .container {
+        width: 250px;
+    }
+    
+    .row-5 {
+    width: 30px
+    }
+    .row-10 {
+        width: 80px
+    }
+    .row-15 {
+        width: 100%;
+    }
+    .row-20 {
+        width: 100%;
+    }
+    .row-25 {
+        width: 100%;
+    }
+    .row-30 {
+        width: 100%;
+    }
+    .row-35 {
+        width: 100%;
+    }
+    .row-40 {
+        width: 100%;
+    }
+    .row-45 {
+        width: 100%;
+    }
+    .row-50 {
+        width: 100%;
+    }
+    .row-55 {
+        width: 100%;
+    }
+    .row-60 {
+        width: 100%;
+    }
+    .row-65 {
+        width: 100%;
+    }
+    .row-70 {
+        width: 100%;
+    }
+    .row-75 {
+        width: 100%;
+    }
+    .row-80 {
+        width: 100%;
+    }
+    .row-85 {
+        width: 100%;
+    }
+    .row-90 {
+        width: 100%;
+    }
+    .row-95 {
+        width: 100%;
+    }
+    
+    .hide-moble {
+        display: none;
+    }
+    
+    #buynow a {
+        text-align: center;
+    }
+    #featured h2, #buynow h2 {
+        font-size: 1.2em;
+        padding: 0 10px;
+    }
+    .maintags {
+        text-align: center;
+        .input {
+            display: inline-block;
+            padding: 10px 0;
+        }
+    }
+    
+    .userinfor img {
+        width: 250px;
+        height: 250px;
+        float: none;
+        margin: 0 0 40px 0;
+        border-radius: 100%;
+    }
+    .userinfor .lead {
+        font-size: 1.1em;
+        padding: 10px 0 10px 0;
+        text-align: left;
+    }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

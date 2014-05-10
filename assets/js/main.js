@@ -9,5 +9,6 @@ $(document).ready(function() {
     $('ul#navlist li a').click(function() {
         var pages = $(this).attr('href');
         $('#loadPage').load('pages/' + pages + '.html');
+        return false;
     });
 }); 

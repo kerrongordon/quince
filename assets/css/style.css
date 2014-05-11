@@ -212,6 +212,38 @@ author {
   font-weight: bold;
   color: #666; }
 
+#contact {
+  background-color: #f9f9f9; }
+  #contact .form {
+    display: inline-block;
+    padding: 30px 5px; }
+    #contact .form .form-control {
+      padding: 10px 5px; }
+  #contact .form-group {
+    padding: 10px 5px; }
+  #contact #yourMessage {
+    width: 98%;
+    padding: 10px 5px; }
+  #contact button {
+    border: none;
+    padding: 20px 50px;
+    background: #40434c;
+    color: #fff;
+    font-size: 1.1em;
+    cursor: pointer; }
+  #contact button:hover {
+    background: #a0d468; }
+  #contact .mainform {
+    float: left; }
+  #contact aside {
+    float: right; }
+    #contact aside h4 {
+      font-size: 1.5em;
+      padding: 20px 0; }
+  #contact label {
+    font-size: 1.2em;
+    display: block; }
+
 .hide-desktop {
   display: none; }
 
@@ -458,7 +490,10 @@ author {
   .menubutton {
     float: right;
     font-size: 2.5em;
-    cursor: pointer; } }
+    cursor: pointer; }
+
+  #contact #yourMessage {
+    width: 100%; } }
 @media only screen and (max-width: 470px) {
   .container {
     width: 250px; }

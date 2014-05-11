@@ -9,7 +9,7 @@ $(document).ready(function() {
     });
     
     //init 
-    $('#loadPage').load('pages/index.html');
+    $('#loadPage').load('pages/home.html');
     
     //load menu pages
     $('ul#navlist li a').click(function() {
@@ -19,7 +19,7 @@ $(document).ready(function() {
                 $('#loadPage').fadeIn('slow');
             });
         });
-        document.title = pages + 'Gordon-tek';
+        document.title = pages + ' | Gordon-tek';
         return false;
     });
 }); 

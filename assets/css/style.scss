@@ -297,11 +297,14 @@ author {
     }
     .mainform {
         float: left;
+        padding: 50px 0;
     }
     aside {
         float: right;
         background: rgba(0, 0, 0, 0.05);
         padding: 5px 10px;
+        margin: 70px 10px;
+        box-sizing: border-box;
         h4 {
             font-size: 1.5em;
             padding: 20px 0;

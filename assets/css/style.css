@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic);
 /* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)
@@ -36,13 +37,12 @@ table {
   border-spacing: 0; }
 
 /* end of reset */
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic);
 body {
-  background-color: #fff;
+  background-color: white;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
   line-height: 1.5em;
-  color: #777; }
+  color: #777777; }
 
 section {
   padding: 40px 0; }
@@ -52,7 +52,7 @@ section {
   margin: 0 auto; }
 
 #menu {
-  background-color: #fff;
+  background-color: white;
   padding: 35px;
   position: relative; }
   #menu h1 {
@@ -74,8 +74,8 @@ section {
 #featured, #buynow {
   background-color: #a0d468; }
   #featured h2, #buynow h2 {
-    color: #fff;
-    font-size: 2em;
+    color: white;
+    font-size: 2.0em;
     float: left;
     font-weight: 300; }
 
@@ -208,7 +208,7 @@ a {
     margin: 10px 0; }
 
 author {
-  font-size: 1em;
+  font-size: 1.0em;
   font-weight: bold;
   color: #666; }
 
@@ -247,6 +247,13 @@ author {
   #contact label {
     font-size: 1.2em;
     display: block; }
+
+#loadPage {
+  -webkit-transition: height .75s ease;
+  -moz-transition: height .75s ease;
+  -ms-transition: height .75s ease;
+  -o-transition: height .75s ease;
+  transition: height .75s ease; }
 
 .hide-desktop {
   display: none; }
@@ -311,109 +318,156 @@ author {
 @media only screen and (max-width: 1300px) {
   .container {
     width: 800px; }
+
   .row-5 {
     width: 30px; }
+
   .row-10 {
     width: 80px; }
+
   .row-15 {
     width: 130px; }
+
   .row-20 {
     width: 180px; }
+
   .row-25 {
     width: 230px; }
+
   .row-30 {
     width: 380px; }
+
   .row-35 {
     width: 330px; }
+
   .row-40 {
     width: 380px; }
+
   .row-45 {
     width: 430px; }
+
   .row-50 {
     width: 480px; }
+
   .row-55 {
     width: 530px; }
+
   .row-60 {
     width: 580px; }
+
   .row-65 {
     width: 630px; }
+
   .row-70 {
     width: 680px; }
+
   .row-75 {
     width: 730px; }
+
   .row-80 {
     width: 380px; }
+
   .row-85 {
     width: 830px; }
+
   .row-90 {
     width: 580px; }
+
   .row-95 {
     width: 930px; }
+
   .maininfor {
     float: none; }
+
   #featured h2, #buynow h2 {
     font-size: 1.7em; } }
-
 @media only screen and (max-width: 855px) {
   .container {
     width: 400px; }
+
   .row-5 {
     width: 30px; }
+
   .row-10 {
     width: 80px; }
+
   .row-15 {
     width: 130px; }
+
   .row-20 {
     width: 180px; }
+
   .row-25 {
     width: 230px; }
+
   .row-30 {
     width: 380px; }
+
   .row-35 {
     width: 330px; }
+
   .row-40 {
     width: 380px; }
+
   .row-45 {
     width: 430px; }
+
   .row-50 {
     width: 480px; }
+
   .row-55 {
     width: 530px; }
+
   .row-60 {
     width: 580px; }
+
   .row-65 {
     width: 630px; }
+
   .row-70 {
     width: 680px; }
+
   .row-75 {
     width: 730px; }
+
   .row-80 {
     width: 380px; }
+
   .row-85 {
     width: 830px; }
+
   .row-90 {
     width: 380px; }
+
   .row-95 {
     width: 930px; }
+
   .hide-moble {
     display: none; }
+
   #buynow a {
     text-align: center; }
+
   #featured h2, #buynow h2 {
     font-size: 1.2em; }
+
   #menu nav ul li {
     box-sizing: border-box;
     display: block;
     color: #fff; }
+
   #menu nav ul li:hover {
     background: #2b2b2b; }
+
   #menu nav ul li a {
     padding: 15px;
     display: block; }
+
   #menu h1 {
     float: none;
     text-align: center;
     margin: 0 0 35px 0; }
+
   #menu nav {
     float: none;
     text-align: center;
@@ -425,88 +479,117 @@ author {
     -ms-transition: all 0.55s ease;
     -o-transition: all 0.55s ease;
     transition: all 0.55s ease; }
+
   .moblemenu {
     max-height: 0; }
+
   .showmenu {
     max-height: 25em; }
+
   .menubutton {
     display: block;
     position: absolute;
     top: 40px;
     right: 10px; }
+
   #menu {
     padding: 30px 0 0 0; }
+
   #menu .container {
     width: 100%; }
+
   .menubutton {
     float: right;
     font-size: 2.5em;
     cursor: pointer; }
+
   #contact #yourMessage {
     width: 100%; } }
-
 @media only screen and (max-width: 470px) {
   .container {
     width: 250px; }
+
   .row-5 {
     width: 30px; }
+
   .row-10 {
     width: 80px; }
+
   .row-15 {
     width: 100%; }
+
   .row-20 {
     width: 100%; }
+
   .row-25 {
     width: 100%; }
+
   .row-30 {
     width: 100%; }
+
   .row-35 {
     width: 100%; }
+
   .row-40 {
     width: 100%; }
+
   .row-45 {
     width: 100%; }
+
   .row-50 {
     width: 100%; }
+
   .row-55 {
     width: 100%; }
+
   .row-60 {
     width: 100%; }
+
   .row-65 {
     width: 100%; }
+
   .row-70 {
     width: 100%; }
+
   .row-75 {
     width: 100%; }
+
   .row-80 {
     width: 100%; }
+
   .row-85 {
     width: 100%; }
+
   .row-90 {
     width: 100%; }
+
   .row-95 {
     width: 100%; }
+
   .hide-moble {
     display: none; }
+
   #buynow a {
     text-align: center; }
+
   #featured h2, #buynow h2 {
     font-size: 1.2em;
     padding: 0 10px; }
+
   .maintags {
     text-align: center; }
     .maintags .input {
       display: inline-block;
       padding: 10px 0; }
+
   .userinfor img {
     width: 250px;
     height: 250px;
     float: none;
     margin: 0 0 40px 0;
     border-radius: 100%; }
+
   .userinfor .lead {
     font-size: 1.1em;
     padding: 10px 0 10px 0;
     text-align: left; } }
-
-/*# sourceMappingURL=style.css.map */

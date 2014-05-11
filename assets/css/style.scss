@@ -313,6 +313,14 @@ author {
     }
 }
 
+#loadPage {
+    -webkit-transition: height .75s ease;
+	-moz-transition: height .75s ease;
+	-ms-transition: height .75s ease;
+	-o-transition: height .75s ease;
+	transition: height .75s ease;
+}
+
 
 .hide-desktop {
     display: none;

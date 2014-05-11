@@ -20,6 +20,8 @@ $(document).ready(function() {
             });
         });
         document.title = pages + ' | Gordon-tek';
+        window.location.hash = pages;
         return false;
     });
+    
 }); 

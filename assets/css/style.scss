@@ -266,6 +266,49 @@ author {
     color: #666;
 }
 
+#contact {
+    background-color: #f9f9f9;
+    .form {
+        display: inline-block;
+        padding: 30px 5px;
+        .form-control {
+           padding: 10px 5px;
+        }
+    }
+    .form-group {
+        padding: 10px 5px;
+    }
+    #yourMessage {
+        width: 98%;
+        padding: 10px 5px;
+    }
+    button {
+        border: none;
+        padding: 20px 50px;
+        background: #40434c;
+        color: #fff;
+        font-size: 1.1em;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #a0d468;
+    }
+    .mainform {
+        float: left;
+    }
+    aside {
+        float: right;
+        h4 {
+            font-size: 1.5em;
+            padding: 20px 0;
+        }
+    }
+    label {
+        font-size: 1.2em;
+        display: block;
+    }
+}
+
 
 .hide-desktop {
     display: none;
@@ -528,6 +571,9 @@ author {
         float: right;
         font-size: 2.5em;
         cursor: pointer;
+    }
+    #contact #yourMessage {
+        width: 100%;
     }
     
 }

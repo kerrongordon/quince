@@ -272,7 +272,8 @@ author {
         display: inline-block;
         padding: 30px 5px;
         .form-control {
-           padding: 10px 5px;
+            padding: 10px 5px;
+            border: 1px solid rgba(186, 186, 186, 1);
         }
     }
     .form-group {

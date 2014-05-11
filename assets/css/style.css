@@ -224,7 +224,8 @@ author {
     padding: 10px 5px; }
   #contact #yourMessage {
     width: 98%;
-    padding: 10px 5px; }
+    padding: 10px 5px;
+    border: 1px solid #bababa; }
   #contact button {
     border: none;
     padding: 20px 50px;

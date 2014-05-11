@@ -76,6 +76,7 @@ section {
 #menu {
     background-color: $bcolor;
     padding: 35px;
+    position: relative;
     h1 {
         font-size: 3.5em;
         padding: 15px 0;
@@ -167,6 +168,7 @@ section {
     .tags {
         a {
             background: #40434c;
+            font-size: 0.9em;
             padding: 8px 15px;
             display: inline-block;
             margin: 5px 1px;
@@ -174,6 +176,8 @@ section {
         }
     }
 }
+
+
 
 #footer .tags a:hover {
     background: $fbcolor;
@@ -509,6 +513,9 @@ author {
     }
     .menubutton {
         display: block;
+        position: absolute;
+        top: 40px;
+        right: 10px;
     }
     
     #menu {
